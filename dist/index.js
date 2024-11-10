@@ -20,12 +20,8 @@ class CarImpl {
         console.log(`Transmission wear updated to: ${this.transmission.wear}%`);
     }
 }
-
-let car = new CarImpl("Tesla Model S", 2022, { type: "Electric", horsepower: 670, wear: 10 }, { type: "Automatic", wear: 5 });
+const car = new CarImpl("Tesla Model S", 2022, { type: "Electric", horsepower: 670, wear: 10 }, { type: "Automatic", wear: 5 });
 car.displayInfo();
-console.log(``);
 car.updateEngineWear(15);
-console.log(``);
 car.updateTransmissionWear(7);
-console.log(``);
 car.displayInfo();
