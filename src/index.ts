@@ -47,7 +47,7 @@ class CarImpl implements Car {
 }
 
 
-let car = new CarImpl(
+const car = new CarImpl(
   "Tesla Model S",
   2022,
   { type: "Electric", horsepower: 670, wear: 10 },
